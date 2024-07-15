@@ -2,7 +2,7 @@ import './SearchBar.css';
 
 function SearchBar() {
     return (
-        <div className="flex items-center h-10 bg-zinc-50 rounded fixed">
+        <div className="flex items-center h-10 bg-zinc-50 rounded">
             <input type="search" placeholder="Buscar" className="h-10 pl-8 w-[500px] bg-zinc-50" />
             <SearchIcon className="absolute left-2.5 top-2.5  text-muted-foreground text-black " />
         </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <header className="flex w-screen px-8 h-28 fixed items-center justify-between flex-wrap top-0 ">
+        <header className="flex w-screen px-8 h-28 fixed items-center justify-between flex-wrap top-0 z-10">
             <nav className='flex '>
                 <Logo />
                 
@@ -14,8 +15,8 @@ function Header() {
                 </ul>
             </nav>
             <div className='flex gap-4 '>
-                <a className='text-zinc-50 mx-4' href="">Iniciar Sesión</a>
-                <a className='text-zinc-50 mx-4' href="">Registrate</a>
+                <Link className="text-zinc-50 mx-4 hover:text-gray-300" to="/login">Iniciar Sesión</Link>
+                <Link className="text-zinc-50 mx-4 hover:text-gray-300" to="/register">Regístrate</Link>
             </div>
         </header>
     );

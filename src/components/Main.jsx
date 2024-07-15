@@ -3,12 +3,12 @@ import React from 'react';
 function MainContent() {
     return (
         <main className="main-content">
-        <section className='w-screen h-screen' id="about">
-            <div className='bg-cyan-400 w-full h-full opacity-5'>
-                <h2>Acerca de</h2>
-                <p>Esta es una landing page creada con React.</p>
-            </div>
-        </section>
+            <section className='w-screen h-screen bg-cover' style={{backgroundImage:'url("/public/hero-image-training.jpg")'}} id="about">
+                <div className='bg-cyan-500/50 grayscale-0 z-10 w-full h-full flex justify-center items-center'>
+                    <h2 color='black'>Acerca de</h2>
+                    <p>Esta es una landing page creada con React.</p>
+                </div>
+            </section>
         <section id="features">
             <h2>Características</h2>
             <ul>
