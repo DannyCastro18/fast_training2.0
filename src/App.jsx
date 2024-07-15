@@ -8,6 +8,10 @@ import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
 
+import Codigo from './pages/entrenador/landing-page/Codigo'
+import Contrasena from './pages/entrenador/landing-page/Contrasena'
+import ChangePassword from './components/regist-inisesion-input/ChangePassword'
+
 function App() {
   return (
     // <Router>
@@ -26,6 +30,12 @@ function App() {
       <TeamOverview />
     </div>
   );
+    // <div className='w-full'>
+    //   <Codigo />
+    //   <Contrasena />
+    //   <ChangePassword />
+    // </div>
+  
 }
 
 export default App;
