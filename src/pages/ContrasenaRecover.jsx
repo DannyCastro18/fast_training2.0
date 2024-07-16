@@ -1,8 +1,9 @@
 import React from "react"
-export default function Contrasena (){
+
+function ContrasenaRecover() {
     return(
         <>
-       <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <button className="text-left mb-4 focus:outline-none w-full">
           <svg
@@ -24,7 +25,7 @@ export default function Contrasena (){
         <p className="text-center text-gray-600 mb-2">
           Ingresa el correo electrónico con el que estás registrado,te enviaremos un código para verificar que eres tú
         </p>
-       
+        
         <form>
           <div className="mb-4">
             <label htmlFor="email" className="block text-lg font-medium bg text-gray-700 text-left">
@@ -50,3 +51,5 @@ export default function Contrasena (){
         </>
     )
 }
+
+export default ContrasenaRecover;
