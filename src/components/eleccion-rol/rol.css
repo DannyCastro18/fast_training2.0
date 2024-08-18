@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+.container{
+    text-align: center;
+}
+.roles{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.rol{
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 0;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+#entrenador{
+    background-color: #D3D3D3;
+    color: black;
+    cursor: pointer;
+}
+#entrenador:hover{
+    background-color: #F4562D;
+}
+#jugador{
+    background-color: #D3D3D3;
+    color: black;
+    cursor: pointer;
+}
+#jugador:hover{
+    background-color: #F4562D;
+}
+button img{
+    display: block;
+    margin: 0 auto 10px;
+}
+button p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.continuar{
+    width: 16em;
+    padding: 10px 20px;
+    background-color: #F4562D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.continuar:hover{
+    background-color: #FF7F50;
+}
