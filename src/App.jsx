@@ -15,12 +15,13 @@ import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 // import Notificaciones2 from './components/NotificacionesJugador'
 import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
+import Quejas from './pages/QuejasyAyudas'
 
 
 function App() {
   return (
     <Router>
-      <div className="w-screen">
+      <div className="bg-gradient-to-br from-sky-200 to-orange-200">
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
@@ -32,6 +33,7 @@ function App() {
           <Route path='/dashboardTrainer' element={<DashboardTrainer />} />
           <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
           <Route path='/teamOverview' element={<TeamOverview />} />
+          <Route path='/jugador/pqrs' element={<Quejas />}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
         </Routes>
