@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'naranja': '#E14D23',
+      },
+      fontFamily: {
+        'racing': ['"Racing Sans One"', 'cursive'],
+        'lato': ['Lato', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
