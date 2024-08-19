@@ -39,17 +39,17 @@ function ContrasenaRecover2() {
             <input
               type="email"
               id="email"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none sm:text-sm text-center bg-slate-200"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none sm:text-sm text-center bg-slate-200 rounded-lg"
             />
           </div>
-        <div className="flex justify-center items-center py-2 h-16 border rounded-lg border-yellow-500">
+        <div className="flex justify-center items-center py-2 h-12 border rounded-lg border-yellow-500">
             <img className="h-8 text-color mx-4" src="/public/alert-icon.png" alt="" />
-            <p className="text-yellow-600 align-left" >Al continuar se cerrara sesión en todos los dispositivos</p>
+            <p className="text-yellow-600 text-left text-sm" >Al continuar se cerrara sesión en todos los dispositivos</p>
         </div>
-          <Link>
+          <Link to={"/dashboard-jugador"}>
             <button
                 type="submit"
-                className="my-4 bg-naranja text-white py-3 px-4 w-full hover:bg-naranja text-lg mb-2"
+                className="rounded-lg font-black my-4 bg-naranja text-white py-3 px-4 w-full hover:bg-naranja text-lg mb-2"
             >
                 Enviar código
             </button>
