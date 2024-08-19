@@ -8,6 +8,10 @@ export default {
     extend: {
       colors:{
         'naranja': '#E14D23',
+      },
+      fontFamily: {
+        'racing': ['"Racing Sans One"', 'cursive'],
+        'lato': ['Lato', 'sans-serif'],
       }
     },
   },
