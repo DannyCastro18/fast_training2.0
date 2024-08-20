@@ -1,10 +1,5 @@
 import React from 'react';
 import './App.css';
-<<<<<<< HEAD
-import Notificaciones from './notificaciones-administrador/Notificaciones';
-import Notificaciones2 from './Notificaciones-jugador/Notificaciones2'
-import Rol from './eleccion-rol/Rol'
-=======
 import LandingPage from './pages/LandingPage';
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
 import DashboardJugador from './pages/DashboardJugador';
@@ -19,7 +14,6 @@ import ContrasenaRecover2 from './pages/ContrasenaRecover2'
 import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 // import Notificaciones2 from './components/NotificacionesJugador'
 import Rol from './components/Rol'
->>>>>>> origin/johansito
 
 
 function App() {
