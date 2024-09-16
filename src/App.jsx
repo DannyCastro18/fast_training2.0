@@ -16,12 +16,13 @@ import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
-
+import Perfil from './components/Perfil/cuadro1'
+import Configuracion from './components/configuración/cuadro2'
 
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-sky-200 to-orange-200">
+      <div className="bg-gradient-to-br from-sky-200 to-white-200">
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
@@ -36,6 +37,8 @@ function App() {
           <Route path='/jugador/pqrs' element={<Quejas />}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
+          <Route path='/perfil/user' element={<Perfil/>}></Route>
+          <Route path='/configuracion/user' element={<Configuracion/>}></Route>
         </Routes>
       </div>
     </Router>
