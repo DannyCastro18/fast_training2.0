@@ -18,6 +18,8 @@ import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
 import Perfil from './components/Perfil/cuadro1'
 import Configuracion from './components/configuración/cuadro2'
+import Confi from './pages/admin/configuracion/confi'
+import ConfiguracionAdmin from './pages/admin/configuracion/confi';
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function App() {
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
           <Route path='/perfil/user' element={<Perfil/>}></Route>
           <Route path='/configuracion/user' element={<Configuracion/>}></Route>
+          <Route path='/configuracion/admin' element={<ConfiguracionAdmin/>}></Route>
         </Routes>
       </div>
     </Router>

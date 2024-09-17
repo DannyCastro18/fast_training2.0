@@ -68,7 +68,7 @@ function Rol() {
 
 export default function Info() {
   return (
-    <div className="m-8 bg-white">
+    <div className=" bg-white">
       <Titulo />
       <section className="flex ml-44">
         <section className="m-7">
