@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function MainLanding() {
@@ -175,7 +174,7 @@ function MainLanding() {
                         <img src="/public/user.png" alt="" />
                     </figure>
                     <section className='text-white '>
-                        <h3 className='font-black text-xl'>Henry </h3>
+                        <h3 className='font-black text-xl'>Henry Castillo</h3>
                         <p>Developer Team</p>
                         <p>Frontend-backend-design</p>
                     </section>
