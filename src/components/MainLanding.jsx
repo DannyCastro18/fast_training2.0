@@ -6,7 +6,7 @@ function MainLanding() {
             <section className='w-screen h-screen bg-cover bg-center' style={{backgroundImage:'url("/public/soccer-ball-stadium.jpeg")'}}>
                 <div className='bg-cyan-800/50 z-10 w-full h-full flex justify-center items-center'>
                     <section className='backdrop-blur-sm text-center flex flex-col w-full justify-center items-center text-white h-full'>
-                        <h1 className='font-racing text-7xl mb-4'>Fast <br/>Training</h1>
+                        <h1 className='font-racing text-7xl mb-4'>Fast Training</h1>
                         <h2 className='text-5xl font-black w-1/2 mb-4'>Revoluciona tus entrenamientos de fútbol</h2>
                         <p className='text-2xl w-2/3'>Planifica, administra y visualiza el progreso de tu equipo con estadísticas detalladas, todo desde una sola aplicación.</p>
 
