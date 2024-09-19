@@ -17,9 +17,16 @@ import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
 import Perfil from './components/Perfil/cuadro1'
+
+
 import Configuracion from './components/configuración/cuadro2'
 import Confi from './pages/admin/configuracion/confi'
 import ConfiguracionAdmin from './pages/admin/configuracion/confi';
+import NavbarAdmin from './components/NavbarAdmin';
+import Logo from './components/Logo';
+import Restriccion from './pages/admin/acceso-restringido/restriccion';
+import Navbaredcion from './components/navbar-edicion';
+
 
 function App() {
   return (
@@ -42,6 +49,10 @@ function App() {
           <Route path='/perfil/user' element={<Perfil/>}></Route>
           <Route path='/configuracion/user' element={<Configuracion/>}></Route>
           <Route path='/configuracion/admin' element={<ConfiguracionAdmin/>}></Route>
+          <Route path='/navbar/admin' element={<NavbarAdmin/>}></Route>
+          <Route path='/logo/app' element= {<Logo/>}></Route>
+          <Route path='/acces/restringido' element={<Restriccion/>}></Route>
+          <Route path='/navedi' element={<Navbaredcion/>}></Route>
         </Routes>
       </div>
     </Router>
