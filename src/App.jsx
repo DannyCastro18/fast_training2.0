@@ -1,10 +1,10 @@
-import React from 'react';
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
 import DashboardJugador from './pages/DashboardJugador';
 import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
@@ -21,6 +21,9 @@ import Configuracion from './components/configuración/cuadro2'
 import Confi from './pages/admin/configuracion/confi'
 import ConfiguracionAdmin from './pages/admin/configuracion/confi';
 
+// Admin imports
+import AdminDashboard from './pages/admin/AdminDashboard';
+
 function App() {
   return (
     <Router>
@@ -32,15 +35,21 @@ function App() {
           <Route path='/recoverPass/*' element={<ContrasenaRecover />} />
           <Route path='/recoverPass2/*' element={<ContrasenaRecover2 />} />
           <Route path='/changePass/*' element={<ChangePassword />} />
-          <Route path='/eleccionRol/*' element={<Rol />} />
-          <Route path='/dashboardTrainer' element={<DashboardTrainer />} />
           <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
           <Route path='/teamOverview' element={<TeamOverview />} />
           <Route path='/jugador/pqrs' element={<Quejas />}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
+          {/* Rutas Jugador */}
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
           <Route path='/perfil/user' element={<Perfil/>}></Route>
           <Route path='/configuracion/user' element={<Configuracion/>}></Route>
+          {/* Rutas Entrenador */}
+          <Route path='/eleccionRol/*' element={<Rol />} />
+          <Route path='/trainer/home' element={<DashboardTrainer />} />
+
+
+          {/* Rutas de admin */}
+          <Route path='/admin/home' element={<AdminDashboard />}></Route>
           <Route path='/configuracion/admin' element={<ConfiguracionAdmin/>}></Route>
         </Routes>
       </div>
