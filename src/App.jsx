@@ -18,11 +18,14 @@ import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
 import Perfil from './components/Perfil/cuadro1'
 import Configuracion from './components/configuración/cuadro2'
-import Confi from './pages/admin/configuracion/confi'
-import ConfiguracionAdmin from './pages/admin/configuracion/confi';
+
+// Trainer imports
+
 
 // Admin imports
 import AdminDashboard from './pages/admin/AdminDashboard';
+import ConfiguracionAdmin from './pages/admin/configuracion/configuracionAdmin';
+
 
 function App() {
   return (
@@ -46,11 +49,22 @@ function App() {
           {/* Rutas Entrenador */}
           <Route path='/eleccionRol/*' element={<Rol />} />
           <Route path='/trainer/home' element={<DashboardTrainer />} />
-
+          <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
+          <Route path='/trainer/changePass'></Route>
+          <Route path='/trainer/newTeam' element={createTeam}></Route>
+          <Route path='/trainer/notifications' element={<Notifications/>}></Route>
+          <Route path='/trainer/team' element={<TeamOverview/>}></Route>
+          <Route path='/trainer/documents' element={<Documents/>}></Route>
+          <Route path='/trainer/pqrs' element={<Quejas/>}></Route>
+          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route>
 
           {/* Rutas de admin */}
           <Route path='/admin/home' element={<AdminDashboard />}></Route>
-          <Route path='/configuracion/admin' element={<ConfiguracionAdmin/>}></Route>
+          <Route path='/admin/configuration' element={<ConfiguracionAdmin/>}></Route>
+          <Route path='/admin/deleteUser' element={<DeleteUser />}></Route>
+          <Route path='/admin/incidents' element={<AdminIncidents />}></Route>
+          <Route path='/admin/incidents/info' element={<IncidentInfo />}></Route>
+          <Route path='/admin/archivos' element={<AdminFiles />}></Route>
         </Routes>
       </div>
     </Router>
