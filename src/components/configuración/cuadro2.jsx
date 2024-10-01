@@ -6,9 +6,9 @@ function IconAlert() {
 
 function Seguridad() {
     return (
-        <div className="flex items-start flex-col ">
-            <h2 className="font-bold text-4xl mb-3">Seguridad</h2>
-            <p className="font-light text-2xl text-left mb-3">Al cambiar tu contraseña, se cerrará sesión en todos los dispositivos.</p>
+        <div className="flex items-start flex-col ml-12 ">
+            <h2 className="font-bold text-2xl mb-3">Seguridad</h2>
+            <p className="font-light text-1xl text-left mb-3">Al cambiar tu contraseña, se cerrará sesión en todos los dispositivos.</p>
             <button className="font-light bg-zinc-300 p-1 rounded-none text-center w-44 mb-9">Cambiar contraseña</button>
             <hr />
         </div>
@@ -18,9 +18,9 @@ function Seguridad() {
 
 function Eliminar() {
     return (
-        <div className="flex items-start flex-col  ">
-            <h2 className="font-bold text-4xl mb-3" >Eliminar</h2>
-            <p className="font-light text-2xl text-left mb-3">Al eliminar tu cuenta ya no podrás interacturar con tus usuarios de Fast Training.</p>
+        <div className="flex items-start flex-col ml-12 ">
+            <h2 className="font-bold text-2xl mb-3" >Eliminar</h2>
+            <p className="font-light text-1xl text-left mb-3">Al eliminar tu cuenta ya no podrás interacturar con tus usuarios de Fast Training.</p>
             <button className="font-light bg-zinc-300 w-36 h-46 text-center p-1 rounded-none text-black w-44 mb-4">Eliminar Cuenta</button>
             <section className="border-solid border bg-amber-200 mt-2 px-2 flex gap-2 items-center rounded border-amber-400" >
                 <IconAlert />

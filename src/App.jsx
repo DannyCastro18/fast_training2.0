@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
-import Codigo from './pages/Codigo'
+// import Codigo from './pages/Codigo'
 import ContrasenaRecover from './pages/ContrasenaRecover'
 import ContrasenaRecover2 from './pages/ContrasenaRecover2'
 import ChangePassword from './components/regist-inisesion-input/ChangePassword'
@@ -17,6 +17,8 @@ import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
 import Perfil from './components/Perfil/cuadro1'
+
+
 import Configuracion from './components/configuración/cuadro2'
 
 // Trainer imports
@@ -49,22 +51,22 @@ function App() {
           {/* Rutas Entrenador */}
           <Route path='/eleccionRol/*' element={<Rol />} />
           <Route path='/trainer/home' element={<DashboardTrainer />} />
-          <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
+          {/* <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
           <Route path='/trainer/changePass'></Route>
           <Route path='/trainer/newTeam' element={createTeam}></Route>
           <Route path='/trainer/notifications' element={<Notifications/>}></Route>
           <Route path='/trainer/team' element={<TeamOverview/>}></Route>
           <Route path='/trainer/documents' element={<Documents/>}></Route>
           <Route path='/trainer/pqrs' element={<Quejas/>}></Route>
-          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route>
+          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route> */}
 
           {/* Rutas de admin */}
           <Route path='/admin/home' element={<AdminDashboard />}></Route>
           <Route path='/admin/configuration' element={<ConfiguracionAdmin/>}></Route>
           <Route path='/admin/deleteUser' element={<DeleteUser />}></Route>
-          <Route path='/admin/incidents' element={<AdminIncidents />}></Route>
+          {/* <Route path='/admin/incidents' element={<AdminIncidents />}></Route>
           <Route path='/admin/incidents/info' element={<IncidentInfo />}></Route>
-          <Route path='/admin/archivos' element={<AdminFiles />}></Route>
+          <Route path='/admin/archivos' element={<AdminFiles />}></Route> */}
         </Routes>
       </div>
     </Router>

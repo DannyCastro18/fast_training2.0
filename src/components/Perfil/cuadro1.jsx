@@ -1,6 +1,6 @@
 function IconPerfil() {
   return (
-    <svg className="h-96   w-96 " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><g fill="black"><path d="M224 128a95.76 95.76 0 0 1-31.8 71.37A72 72 0 0 0 128 160a40 40 0 1 0-40-40a40 40 0 0 0 40 40a72 72 0 0 0-64.2 39.37A96 96 0 1 1 224 128" opacity={1}></path><path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24M74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0M96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32m97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0"></path></g></svg>
+    <svg className="h-72   w-72 " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><g fill="black"><path d="M224 128a95.76 95.76 0 0 1-31.8 71.37A72 72 0 0 0 128 160a40 40 0 1 0-40-40a40 40 0 0 0 40 40a72 72 0 0 0-64.2 39.37A96 96 0 1 1 224 128" opacity={1}></path><path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24M74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0M96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32m97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0"></path></g></svg>
   )
 }
 
@@ -17,13 +17,13 @@ function IconAdmi() {
 }
 
 function Titulo() {
-  return <h2 className="font-bold text-5xl flex flex-col items-start m-12">Mi Cuenta</h2>;
+  return <h2 className="font-bold text-4xl flex flex-col items-start m-12">Mi Cuenta</h2>;
 }
 
 function Foto() {
   return (
     <div >
-      <h2 className="text-center text-4xl font-bold">Foto de perfil</h2>
+      <h2 className="text-center text-3xl font-bold">Foto de perfil</h2>
       <IconPerfil />
     </div>
   );
@@ -33,8 +33,8 @@ function Foto() {
 function Nombre() {
   return (
     <div className="mb-9 flex flex-col items-start ">
-      <h2 className="font-bold text-3xl">Nombre</h2>
-      <p className="font-light text-2xl">Alejandra Savedra </p>
+      <h2 className="font-bold text-2xl">Nombre</h2>
+      <p className="font-light text-1xl">Alejandra Savedra </p>
     </div>
 
   );
@@ -44,9 +44,9 @@ function Nombre() {
 function Email() {
   return (
     <div className="mb-9 flex flex-col items-start">
-      <h2 className="font-bold text-3xl">Correo electrónico</h2>
+      <h2 className="font-bold text-2xl">Correo electrónico</h2>
       <div className="flex font-light">
-        <p className="text-2xl">alejasavedra@gmail.com</p>
+        <p className="text-1xl">alejasavedra@gmail.com</p>
         <IconPencil />
       </div>
     </div>
@@ -56,10 +56,10 @@ function Email() {
 function Rol() {
   return (
     <div className="mb-9 flex flex-col items-start">
-      <h2 className="font-bold text-3xl">Rol</h2>
+      <h2 className="font-bold text-2xl">Rol</h2>
       <div className="flex flex-col items-center w-fit font-light">
         <IconAdmi />
-        <p className="text-2xl">Administrador</p>
+        <p className="text-1xl">Administrador</p>
       </div>
     </div>
 
