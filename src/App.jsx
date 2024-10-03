@@ -1,14 +1,14 @@
-import React from 'react';
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
 import DashboardJugador from './pages/DashboardJugador';
 import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
-import Codigo from './pages/Codigo'
+// import Codigo from './pages/Codigo'
 import ContrasenaRecover from './pages/ContrasenaRecover'
 import ContrasenaRecover2 from './pages/ContrasenaRecover2'
 import ChangePassword from './components/regist-inisesion-input/ChangePassword'
@@ -20,8 +20,8 @@ import Perfil from './components/Perfiladministrador/cuadro1'
 
 
 import Configuracion from './components/configuraciónAdministrador/cuadro2'
-import Confi from './pages/admin/configuracion/confi'
-import ConfiguracionAdmin from './pages/admin/configuracion/confi';
+// import Confi from './pages/admin/configuracion/confi'
+import ConfiguracionAdmin from './pages/admin/configuracion/configuracionAdmin';
 import NavbarAdmin from './components/NavbarAdmin';
 import Logo from './components/Logo';
 import Restriccion from './pages/admin/acceso-restringido/restriccion';
@@ -42,23 +42,35 @@ function App() {
           <Route path='/recoverPass/*' element={<ContrasenaRecover />} />
           <Route path='/recoverPass2/*' element={<ContrasenaRecover2 />} />
           <Route path='/changePass/*' element={<ChangePassword />} />
-          <Route path='/eleccionRol/*' element={<Rol />} />
-          <Route path='/dashboardTrainer' element={<DashboardTrainer />} />
           <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
           <Route path='/teamOverview' element={<TeamOverview />} />
           <Route path='/jugador/pqrs' element={<Quejas />}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
-          <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
+          {/* Rutas Jugador */}
           <Route path='/perfil/user' element={<Perfil/>}></Route>
           <Route path='/configuracion/user' element={<Configuracion/>}></Route>
-          <Route path='/configuracion/admin' element={<ConfiguracionAdmin/>}></Route>
-          <Route path='/navbar/admin' element={<NavbarAdmin/>}></Route>
-          <Route path='/logo/app' element= {<Logo/>}></Route>
-          <Route path='/acces/restringido' element={<Restriccion/>}></Route>
-          <Route path='/navedi' element={<NavbarEdicion/>}></Route>
-          <Route path='/configuracion/entrenador' element={<ConfiguracionTrainer/>}></Route>
-          <Route path='/perfiltrainer'element={<PerfilTrainer/>}></Route>
-          <Route path='/configuracion/jugador'element={<ConfiguracionPlayer/>}></Route>
+          <Route path='/jugador/configuracion' element={<ConfiguracionPlayer />} />
+          {/* Rutas Entrenador */}
+          <Route path='/eleccionRol/*' element={<Rol />} />
+          <Route path='/trainer/home' element={<DashboardTrainer />} />
+          <Route path='/trainer/configuracion' element={<ConfiguracionTrainer />} />
+          {/* <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
+          <Route path='/trainer/changePass'></Route>
+          <Route path='/trainer/newTeam' element={createTeam}></Route>
+          <Route path='/trainer/notifications' element={<Notifications/>}></Route>
+          <Route path='/trainer/team' element={<TeamOverview/>}></Route>
+          <Route path='/trainer/documents' element={<Documents/>}></Route>
+          <Route path='/trainer/pqrs' element={<Quejas/>}></Route>
+          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route> */}
+
+          {/* Rutas de admin */}
+          {/* <Route path='/admin/home' element={<AdminDashboard />}></Route> */}
+          <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
+          <Route path='/admin/configuration' element={<ConfiguracionAdmin/>}></Route>
+          <Route path='/admin/deleteUser' element={<DeleteUser />}></Route>
+          {/* <Route path='/admin/incidents' element={<AdminIncidents />}></Route>
+          <Route path='/admin/incidents/info' element={<IncidentInfo />}></Route>
+          <Route path='/admin/archivos' element={<AdminFiles />}></Route> */}
         </Routes>
       </div>
     </Router>
