@@ -1,6 +1,6 @@
-import Info from '../../../components/Perfiladministrador/cuadro1'
-import Configuracion from '../../../components/configuraciónAdministrador/cuadro2'
-import NavbarAdmin from '../../../components/NavbarAdmin'
+import Info from '../../../components/perfilEntrenador/cuadro3'
+import Configuracion from '../../../components/configuracionEntrenador/cuadro4'
+import NavbarTrainer from '../../../components/NavbarTrainer'
 import Logo from '../../../components/Logo'
 
 export default function ConfiguracionTrainer(){
@@ -14,8 +14,7 @@ export default function ConfiguracionTrainer(){
         <hr />
         <Configuracion />    
     </div>
-        <NavbarAdmin/>
+        <NavbarTrainer/>
         
     </>
 }
-

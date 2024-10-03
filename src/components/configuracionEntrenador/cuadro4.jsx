@@ -20,8 +20,9 @@ function Eliminar() {
     return (
         <div className="flex items-start flex-col ml-12 ">
             <h2 className="font-bold text-2xl mb-3" >Eliminar</h2>
-            <p className="font-light text-1xl text-left mb-3">Al eliminar tu cuenta ya no podrás interacturar con tus usuarios de Fast Training.</p>
-            <button className="font-light bg-zinc-300 w-36 h-46 text-center p-1 rounded-none text-black w-44 mb-4">Eliminar Cuenta</button>
+            <p className="font-light text-1xl text-left mb-3">Si eliminas tu cuenta no podrás recuperar ningún archivo o información que te haya sido propocionada por Fast Training.
+            </p>
+            <button className="font-light bg-zinc-300 w-36 h-46 text-center p-1 rounded-none text-black  mb-4">Eliminar Cuenta</button>
             <section className="border-solid border bg-amber-200 mt-2 px-2 flex gap-2 items-center rounded border-amber-400" >
                 <IconAlert />
                 <p className="font-thin text-xs text-amber-500 text-left">Si eliminas tu cuenta no podrás tener acceso a ningún tipo de información.</p>

@@ -23,7 +23,7 @@ function Botones() {
 
 export default function Info() {
     return (
-        <div className="my-12 bg-white p-6 rounded mt-48 w-11/12 h-11/12">
+        <div className="my-12 bg-white p-12 rounded mt-48 w-11/12 h-11/12">
             <IconAlert />
             <Mensaje />
             <Botones />

@@ -16,22 +16,25 @@ import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
-import Perfil from './components/Perfil/cuadro1'
+import Perfil from './components/Perfiladministrador/cuadro1'
 
 
-import Configuracion from './components/configuración/cuadro2'
+import Configuracion from './components/configuraciónAdministrador/cuadro2'
 import Confi from './pages/admin/configuracion/confi'
 import ConfiguracionAdmin from './pages/admin/configuracion/confi';
 import NavbarAdmin from './components/NavbarAdmin';
 import Logo from './components/Logo';
 import Restriccion from './pages/admin/acceso-restringido/restriccion';
-import Navbaredcion from './components/navbar-edicion';
+import NavbarEdicion from './components/navbar-edicion';
+import ConfiguracionTrainer from './pages/entrenador/configuracion/confiTrainer';
+import PerfilTrainer from './components/perfilEntrenador/cuadro3';
+import ConfiguracionPlayer from './pages/jugador/configuracion/confiplayer';
 
 
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-sky-200 to-white-200">
+      <div className="bg-gradient-to-br m-0 from-sky-200 to-white-200">
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
@@ -52,7 +55,10 @@ function App() {
           <Route path='/navbar/admin' element={<NavbarAdmin/>}></Route>
           <Route path='/logo/app' element= {<Logo/>}></Route>
           <Route path='/acces/restringido' element={<Restriccion/>}></Route>
-          <Route path='/navedi' element={<Navbaredcion/>}></Route>
+          <Route path='/navedi' element={<NavbarEdicion/>}></Route>
+          <Route path='/configuracion/entrenador' element={<ConfiguracionTrainer/>}></Route>
+          <Route path='/perfiltrainer'element={<PerfilTrainer/>}></Route>
+          <Route path='/configuracion/jugador'element={<ConfiguracionPlayer/>}></Route>
         </Routes>
       </div>
     </Router>
