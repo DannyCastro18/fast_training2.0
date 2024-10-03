@@ -5,13 +5,13 @@ import Logo from '../../../components/Logo'
 
 export default function ConfiguracionPlayer(){
     return <>
-    <div className='ml-24 mt-2.5 '>
+    <div className='px-32 py-4'>
         <Logo/>
     </div>
     
     <div className='ml-28 w-11/12 h-11/12'>
         <Info/>
-        <hr />
+        <hr className='mx-8' />
         <Configuracion />    
     </div>
         <NavbarPlayer/>

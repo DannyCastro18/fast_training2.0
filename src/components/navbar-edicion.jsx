@@ -1,7 +1,7 @@
 function Navbar() {
     return (
-        <aside className="flex flex-col space-y-4 bg-white shadow-lg justify-items-start w-16 items-center justify-center ml-3 my-3 p-1.5 bg-white/50 h-full">
-            <nav className="flex flex-col justify-between  w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4  items-center">
+        <div className="flex flex-col absolute top-1/2 transform -translate-y-1/2 items-center justify-center  align-self-center  h-auto bg-white shadow-lg w-16 p-1.5 bg-white/50 rounded ml-4">
+            <nav className="flex flex-col justify-center w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4  items-center">
                 <div className="my-6">
                 <button className="bg-transparent border-none p-0" aria-label="Collapse">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 22L0 12L10 2l1.775 1.775L3.55 12l8.225 8.225z" ></path></svg>
@@ -61,7 +61,7 @@ function Navbar() {
                     </button>
                 </div>
                 </nav>
-        </aside>
+        </div>
     );
 }
 

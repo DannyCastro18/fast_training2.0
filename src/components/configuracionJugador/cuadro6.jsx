@@ -10,7 +10,6 @@ function Seguridad() {
             <h2 className="font-bold text-2xl mb-3">Seguridad</h2>
             <p className="font-light text-1xl text-left mb-3">Al cambiar tu contraseña, se cerrará sesión en todos los dispositivos.</p>
             <button className="font-light bg-zinc-300 p-1 rounded-none text-center w-44 mb-9">Cambiar contraseña</button>
-            <hr />
         </div>
         
     )
@@ -18,7 +17,7 @@ function Seguridad() {
 
 function Eliminar() {
     return (
-        <div className="flex items-start flex-col ml-12 ">
+        <div className="flex items-start flex-col ml-12 pb-8">
             <h2 className="font-bold text-2xl mb-3" >Eliminar</h2>
             <p className="font-light text-1xl text-left mb-3">Si eliminas tu cuenta no podrás tener acceso a ningún tipo de información que proporcione tu entrenador en Fast Training.</p>
             <button className="font-light bg-zinc-300 w-36 h-46 text-center p-1 rounded-none text-black mb-4">Eliminar Cuenta</button>
@@ -33,6 +32,7 @@ export default function Configuracion() {
     return (
         <div className=" bg-white ">
             <Seguridad />
+            <hr className="mx-8"/>
             <Eliminar />
         </div>
     )

@@ -12,12 +12,12 @@ function IconPerfil() {
   
   function IconTrainer() {
     return (
-        <img width="100" height="100" src="/public/entrenador.png" alt="personal-trainer"/>
+        <img className="h-16 w-15" src="/public/entrenador.png" alt="personal-trainer"/>
     )
   }
   
   function Titulo() {
-    return <h2 className="font-bold text-4xl flex flex-col items-start m-12">Mi Cuenta</h2>;
+    return <h2 className="font-bold text-4xl flex flex-col items-start p-5">Mi Cuenta</h2>;
   }
   
   function Foto() {

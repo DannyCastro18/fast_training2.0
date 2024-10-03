@@ -34,7 +34,7 @@ import ConfiguracionPlayer from './pages/jugador/configuracion/confiplayer';
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br m-0 from-sky-200 to-white-200">
+      <div className="bg-gradient-to-br m-0 from-sky-200 to-white-200 w-screen h-screen">
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
@@ -45,6 +45,8 @@ function App() {
           <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
           <Route path='/teamOverview' element={<TeamOverview />} />
           <Route path='/jugador/pqrs' element={<Quejas />}></Route>
+          <Route path='/restriccion' element={<Restriccion/>}></Route>
+          <Route path='/navbarEdicion' element={<NavbarEdicion/>}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
           {/* Rutas Jugador */}
           <Route path='/perfil/user' element={<Perfil/>}></Route>

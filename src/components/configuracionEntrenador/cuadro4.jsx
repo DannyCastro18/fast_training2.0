@@ -18,7 +18,7 @@ function Seguridad() {
 
 function Eliminar() {
     return (
-        <div className="flex items-start flex-col ml-12 ">
+        <div className="flex items-start flex-col ml-12 pb-8">
             <h2 className="font-bold text-2xl mb-3" >Eliminar</h2>
             <p className="font-light text-1xl text-left mb-3">Si eliminas tu cuenta no podrás recuperar ningún archivo o información que te haya sido propocionada por Fast Training.
             </p>
@@ -34,6 +34,7 @@ export default function Configuracion() {
     return (
         <div className=" bg-white ">
             <Seguridad />
+            <hr className="mx-8"/>
             <Eliminar />
         </div>
     )
