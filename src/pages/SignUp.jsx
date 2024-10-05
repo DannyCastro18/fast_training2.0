@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 import PlatformsButton from '../components/PlatformsButton';
 
@@ -10,7 +10,7 @@ const SignUp = () => {
                     </section>
                     <section className="bg-white w-1/2 h-full flex justify-center">
                         <section className="flex flex-col w-2/3 p-12">
-                            <Link className="text-3xl self-start" to="/"><i  class="fa-solid fa-angle-left"></i></Link>
+                            <Link className="text-3xl self-start" to="/"><i  className="fa-solid fa-angle-left"></i></Link>
                             <h1 className='text-3xl font-bold'>Registrarse</h1>
                             <form className="flex flex-col p-4">
                                 <div className="mt-4 flex flex-col self-center w-full">

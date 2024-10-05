@@ -3,8 +3,8 @@ import { SearchBar } from './SearchBar';
 
 export default function HeaderApp() {
     return (
-        <header className="flex w-screen gap-8 items-center pl-20 fixed top-0 h-fit">
-            <section className='pt-8 flex justify-between w-full'>
+        <header className="flex h-[10vh] w-full gap-8 items-center justify-center top-0">
+            <section className=' flex justify-between w-full'>
                 <Logo />
                 <SearchBar />
             </section>

@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './pages/LandingPage';
-import DashboardTrainer from './pages/entrenador/DashboardTrainer';
+import Exp from './components/Exp';
+
 import DashboardJugador from './pages/DashboardJugador';
 import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -13,16 +14,22 @@ import ContrasenaRecover from './pages/ContrasenaRecover'
 import ContrasenaRecover2 from './pages/ContrasenaRecover2'
 import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 // import Notificaciones2 from './components/NotificacionesJugador'
-import Rol from './components/Rol'
+import EleccionRol from './components/EleccionRol'
 import DeleteUser from './pages/admin/deleteUser';
-import Quejas from './pages/QuejasyAyudas'
+import Quejas from './pages/jugador/QuejasyAyudas'
 import Perfil from './components/Perfil/cuadro1'
 
 
 import Configuracion from './components/configuración/cuadro2'
 
 // Trainer imports
-
+import DashboardTrainer from './pages/entrenador/DashboardTrainer';
+import TrainerConfiguration from './pages/entrenador/TrainerConfiguration';
+import NotificacionesAdmin from './components/NotificacionesAdmin';
+import CreacionEquipo from './pages/entrenador/CreacionEquipo';
+import DocumentsTrainer from './pages/entrenador/DocumentsTrainer';
+import EditMesocycle from './pages/entrenador/EditMesocycle';
+import TrainerHelp from './pages/entrenador/TrainerHelp';
 
 // Admin imports
 import AdminDashboard from './pages/admin/AdminDashboard';
@@ -32,8 +39,9 @@ import ConfiguracionAdmin from './pages/admin/configuracion/configuracionAdmin';
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-sky-200 to-white-200">
+      <div className="bg-gradient-to-br from-sky-200 to-white-200 ">
         <Routes>
+          <Route path='/exp' element={<Exp />}></Route>
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
           <Route path='/register/*' element={<SignUp />} />
@@ -48,17 +56,19 @@ function App() {
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
           <Route path='/perfil/user' element={<Perfil/>}></Route>
           <Route path='/configuracion/user' element={<Configuracion/>}></Route>
+
+
           {/* Rutas Entrenador */}
-          <Route path='/eleccionRol/*' element={<Rol />} />
+          <Route path='/eleccionRol/*' element={<EleccionRol />} />
           <Route path='/trainer/home' element={<DashboardTrainer />} />
-          {/* <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
+          <Route path='/trainer/config' element={<TrainerConfiguration/>}></Route>
           <Route path='/trainer/changePass'></Route>
-          <Route path='/trainer/newTeam' element={createTeam}></Route>
-          <Route path='/trainer/notifications' element={<Notifications/>}></Route>
+          <Route path='/trainer/newTeam' element={<CreacionEquipo />}></Route>
+          <Route path='/trainer/notifications' element={<NotificacionesAdmin/>}></Route>
           <Route path='/trainer/team' element={<TeamOverview/>}></Route>
-          <Route path='/trainer/documents' element={<Documents/>}></Route>
-          <Route path='/trainer/pqrs' element={<Quejas/>}></Route>
-          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route> */}
+          <Route path='/trainer/documents' element={<DocumentsTrainer/>}></Route>
+          <Route path='/trainer/help' element={<TrainerHelp />}></Route>
+          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route>
 
           {/* Rutas de admin */}
           <Route path='/admin/home' element={<AdminDashboard />}></Route>

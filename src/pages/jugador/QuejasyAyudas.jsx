@@ -1,6 +1,5 @@
-import React from 'react';
-import HeaderApp from '../components/HeaderApp';
-import NavbarJugador from '../components/NavbarJugador';
+import HeaderApp from '../../components/HeaderApp';
+import NavbarJugador from '../../components/NavbarJugador';
 
 function   Quejas() {
   return (
@@ -10,7 +9,7 @@ function   Quejas() {
       <div className="container">
           <header>
             <h3>¿Tienes sugerencias, quejas o reclamos?</h3>
-            <style jsx>{`
+            <style >{`
             h3{
                   text-align:left;
                   margin:20px;
@@ -37,7 +36,7 @@ function   Quejas() {
             <button className='enviar'>Enviar</button>
             </section>
             </section>
-            <style jsx>{`
+            <style >{`
               input {
                 
                   background-color: #f7f7f7;
@@ -85,7 +84,7 @@ function   Quejas() {
               <li>¿Cómo puedo desactivar la habitación Wi-Fi?</li>
               <li>¿Cómo puedo desactivar el modo de entrenamiento?</li>
               <li>¿Cómo puedo desactivar los colores de la habitación?</li>
-              <style jsx>{`
+              <style >{`
               h2{
             color: red;
             text-decoration: none;

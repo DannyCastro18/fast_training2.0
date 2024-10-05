@@ -10,7 +10,7 @@ const Login = () => {
                     </section>
                     <section className="bg-white w-1/2 h-full flex justify-center">
                         <section className="flex flex-col w-2/3 p-12">
-                            <Link className="text-3xl self-start" to="/"><i  class="fa-solid fa-angle-left"></i></Link>
+                            <Link className="text-3xl self-start" to="/"><i  className="fa-solid fa-angle-left"></i></Link>
                             <h1 className='text-3xl font-bold'>Inicio de Sesión</h1>
                             <form className="flex flex-col p-4">
                                 <div className="mt-4 flex flex-col self-center w-full">
@@ -23,7 +23,7 @@ const Login = () => {
                                     <Link className="text-right text-sky-500 text-xs" to="/recoverPass">¿Olvidaste tu contraseña?</Link>
                                 </div>
                                 <div>
-                                    <Link to={"/dashboardTrainer"}>
+                                    <Link to={"/trainer/home"}>
                                         <PrimaryButton text="Iniciar Sesión" />
                                     </Link>
                                 </div>

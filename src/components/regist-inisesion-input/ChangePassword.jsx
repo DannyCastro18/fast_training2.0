@@ -1,6 +1,6 @@
 import React from 'react';
 import FormInput from './FormInput';
-import Button from './Button';
+import Button from '../SecondaryButton';
 import WarningMessage from './WarningMessage';
 
 const ChangePassword = () => {

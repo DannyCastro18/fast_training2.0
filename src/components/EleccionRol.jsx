@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
-function Rol() {
+function EleccionRol() {
     return (
         <>
             <section className="flex flex-col items-center justify-center w-fit h-fit py-20 rounded-xl bg-gray-200">
                 <h1 className="text-center mb-8 text-2xl font-black">Elige tu rol</h1>
                 <section className="flex justify-center mb-5">
-                    <Link to="/dashboardTrainer">
+                    <Link to="/trainer/home">
                         <button className="flex flex-col items-center p-5 mx-3 bg-gray-300 text-black transition duration-300 hover:bg-orange-600">
                             <img src="./public/entrenador.png" alt="Entrenador" className="mb-2" />
                             <p className="m-0 text-lg font-bold">Entrenador</p>
                         </button>
                     </Link>
-                    <Link to="/dashboardJugador">
+                    <Link to="/player/home">
                         <button className="flex flex-col items-center p-5 mx-3 bg-gray-300 text-black transition duration-300 hover:bg-orange-600">
                             <img src="./public/jugador.png" alt="Jugador" className="mb-2" />
                             <p className="m-0 text-lg font-bold">Jugador</p>
@@ -27,4 +27,4 @@ function Rol() {
     );
 }
 
-export default Rol;
+export default EleccionRol;
