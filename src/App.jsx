@@ -29,6 +29,8 @@ import NavbarEdicion from './components/navbar-edicion';
 import ConfiguracionTrainer from './pages/entrenador/configuracion/confiTrainer';
 import PerfilTrainer from './components/perfilEntrenador/cuadro3';
 import ConfiguracionPlayer from './pages/jugador/configuracion/confiplayer';
+import TablaMesociclo from './components/tabla-mesociclo/mesociclo';
+import EdicionMesociclo from './pages/entrenador/edicion-mesociclo/edicionMesociclo';
 
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
           <Route path='/eleccionRol/*' element={<Rol />} />
           <Route path='/trainer/home' element={<DashboardTrainer />} />
           <Route path='/trainer/configuracion' element={<ConfiguracionTrainer />} />
+          <Route path='/trainer/mesociclo' element={<TablaMesociclo/>}></Route>
+          <Route path='/trainer/edicionmesociclo' element={<EdicionMesociclo/>}></Route>
           {/* <Route path='/trainer/configuracion' element={<TrainerConfiguration/>}></Route>
           <Route path='/trainer/changePass'></Route>
           <Route path='/trainer/newTeam' element={createTeam}></Route>
