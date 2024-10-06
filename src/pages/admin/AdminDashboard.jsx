@@ -1,4 +1,4 @@
-import NavbarAdmin from '../../components/NavbarAdmin';
+import NavbarAdmin from '../../components/Navbar/NavbarAdmin';
 import HeaderApp from '../../components/HeaderApp';
 import MainAdmin from '../../components/MainAdmin';
 

@@ -1,7 +1,7 @@
-import Info from '../../../components/perfilJugador/cuadro5'
-import Configuracion from '../../../components/configuracionJugador/cuadro6'
-import NavbarPlayer from '../../../components/NavbarJugador'
-import Logo from '../../../components/Logo'
+import Info from '../../components/perfilJugador/cuadro5'
+import Configuracion from '../../components/configuracionJugador/cuadro6'
+import NavbarPlayer from '../../components/Navbar/NavbarJugador'
+import Logo from '../../components/Logo'
 
 export default function ConfiguracionPlayer(){
     return <>

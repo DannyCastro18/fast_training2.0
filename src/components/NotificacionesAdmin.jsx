@@ -1,4 +1,5 @@
-function Notificaciones() {
+function Notificaciones({ onClose, isOpen }) {
+    if (!isOpen) return null;
   return (
       <>
           <h2>Notificaciones</h2>

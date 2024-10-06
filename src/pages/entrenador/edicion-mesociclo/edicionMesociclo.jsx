@@ -1,5 +1,5 @@
-import Mesociclo from '../../../components/tabla-mesociclo/mesociclo';
-import NavbarEdicion from '../../../components/navbar-edicion';
+import { TablaMesociclo } from '../../../components/mesociclo/Mesociclo';
+import NavbarEdicion from '../../../components/Navbar/navbar-edicion';
 import Logo from '../../../components/Logo';
 
 export default function EdicionMesociclo(){
@@ -9,7 +9,7 @@ export default function EdicionMesociclo(){
         <Logo/>
         </div>
         <NavbarEdicion/>
-        <Mesociclo/>
+        <TablaMesociclo />
         </>
     )
 }

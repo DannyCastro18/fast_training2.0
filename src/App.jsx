@@ -1,14 +1,8 @@
 import './App.css';
-import LandingPage from './pages/LandingPage';
-import Exp from './components/Exp';
-
-import DashboardJugador from './pages/DashboardJugador';
-import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
-
 // import Codigo from './pages/Codigo'
 import ContrasenaRecover from './pages/ContrasenaRecover'
 import ContrasenaRecover2 from './pages/ContrasenaRecover2'
@@ -16,11 +10,14 @@ import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 // import Notificaciones2 from './components/NotificacionesJugador'
 import EleccionRol from './components/EleccionRol'
 import DeleteUser from './pages/admin/deleteUser';
-import Quejas from './pages/jugador/QuejasyAyudas'
 // import Perfil from './components/Perfil/cuadro1'
-
-
 // import Configuracion from './components/configuración/cuadro2'
+
+// Player imports
+import DashboardJugador from './pages/jugador/DashboardJugador';
+import ConfigurationPlayer from './pages/jugador/confiplayer';
+import PlayerDocuments from './pages/jugador/PlayerDocuments';
+import PlayerHelp from './pages/jugador/PlauerHelp';
 
 // Trainer imports
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
@@ -30,17 +27,16 @@ import DocumentsTrainer from './pages/entrenador/DocumentsTrainer';
 import EditMesocycle from './pages/entrenador/EditMesocycle';
 import TrainerHelp from './pages/entrenador/TrainerHelp';
 import ConfigurationTrainer from './pages/entrenador/configTrainer';
+import TeamOverview from './pages/entrenador/TeamOverview';
 
 // Admin imports
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ConfiguracionAdmin from './pages/admin/configuracion/configuracionAdmin';
-import NavbarAdmin from './components/NavbarAdmin';
+import NavbarAdmin from './components/Navbar/NavbarAdmin';
 import Logo from './components/Logo';
 import Restriccion from './pages/admin/acceso-restringido/restriccion';
-import NavbarEdicion from './components/navbar-edicion';
-import PerfilTrainer from './components/perfilEntrenador/cuadro3';
-import ConfigurationPlayer from './pages/jugador/configuracion/confiplayer';
-import TablaMesociclo from './components/tabla-mesociclo/mesociclo';
+import NavbarEdicion from './components/Navbar/navbar-edicion';
+import { TablaMesociclo } from './components/mesociclo/Mesociclo';
 import EdicionMesociclo from './pages/entrenador/edicion-mesociclo/edicionMesociclo';
 
 
@@ -49,22 +45,21 @@ function App() {
     <Router>
       <div className="bg-gradient-to-br m-0 from-sky-200 to-white-200 w-screen h-screen">
         <Routes>
-          <Route path='/exp' element={<Exp />}></Route>
+          {/* <Route path='/exp' element={<ArchivosTrainer />}></Route> */}
           <Route path='/' element={<LandingPage />} />
           <Route path='/login/*' element={<Login />} />
           <Route path='/register/*' element={<SignUp />} />
           <Route path='/recoverPass/*' element={<ContrasenaRecover />} />
           <Route path='/recoverPass2/*' element={<ContrasenaRecover2 />} />
           <Route path='/changePass/*' element={<ChangePassword />} />
-          <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
-          <Route path='/teamOverview' element={<TeamOverview />} />
-          <Route path='/jugador/pqrs' element={<Quejas />}></Route>
           <Route path='/restriccion' element={<Restriccion/>}></Route>
           <Route path='/navbarEdicion' element={<NavbarEdicion/>}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
           {/* Rutas Jugador */}
-          {/* <Route path='/perfil/user' element={<Perfil/>}></Route>
-          <Route path='/configuracion/user' element={<Configuracion/>}></Route> */}
+          <Route path='/player/home' element={<DashboardJugador />}></Route>
+          <Route path='/player/config' element={<ConfigurationPlayer/>}></Route>
+          <Route path='/player/help' element={<PlayerHelp />}></Route>
+          <Route path='/player/documents' element={<PlayerDocuments/>}></Route>
 
 
           {/* Rutas Entrenador */}

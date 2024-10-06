@@ -2,7 +2,7 @@ import PrimaryButton from "../../components/PrimaryButton";
 import SecondaryButton from "../../components/SecondaryButton";
 import InputForm from "../../components/InputForm";
 import { useState } from 'react';
-import NavbarTrainer from '../../components/NavbarTrainer';
+import NavbarTrainer from '../../components/Navbar/NavbarTrainer';
 import HeaderApp from "../../components/HeaderApp";
 
 const CreacionEquipo = () => {

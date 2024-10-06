@@ -1,5 +1,5 @@
 import HeaderApp from '../../components/HeaderApp';
-import NavbarJugador from '../../components/NavbarJugador';
+import NavbarJugador from '../../components/Navbar/NavbarJugador';
 
 function   Quejas() {
   return (
