@@ -17,7 +17,7 @@ function IconAdmi() {
 }
 
 function Titulo() {
-  return <h2 className="font-bold text-4xl flex flex-col items-start m-12">Mi Cuenta</h2>;
+  return <h2 className="font-bold text-4xl flex flex-col items-start p-5">Mi Cuenta</h2>;
 }
 
 function Foto() {

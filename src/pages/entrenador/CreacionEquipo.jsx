@@ -22,7 +22,7 @@ const CreacionEquipo = () => {
                     <h1 className=" text-3xl font-bold m-4">Creación de Equipo</h1>
                     <section className="flex justify-around">
                         <section>
-                            <p className="text-lg my-4">Añade una el escudo de tu equipo (Opcional)</p>
+                            <p className="text-lg my-4">Añade el escudo de tu equipo (Opcional)</p>
                             
                             <div className="w-48 h-48 border border-gray-300 rounded-lg overflow-hidden mb-2">
                                 {image ? (
