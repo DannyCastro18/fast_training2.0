@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import LandingPage from './pages/LandingPage';
-import DashboardTrainer from './pages/entrenador/DashboardTrainer';
-import DashboardJugador from './pages/DashboardJugador';
+import DashboardTrainer from './components/dashboard-entrenador/DashboardTrainer';
+import DashboardJugador from './components/dashboard-jugador/DashboardJugador';
 import TeamOverview from './pages/entrenador/TeamOverview';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
