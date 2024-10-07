@@ -16,6 +16,7 @@ import ChangePassword from './components/regist-inisesion-input/ChangePassword'
 import Rol from './components/Rol'
 import DeleteUser from './pages/admin/deleteUser';
 import Quejas from './pages/QuejasyAyudas'
+import Contrasena from './pages/ContrasenaRecover2';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/dashboardJugador' element={<DashboardJugador />}></Route>
           <Route path='/teamOverview' element={<TeamOverview />} />
           <Route path='/jugador/pqrs' element={<Quejas />}></Route>
+          <Route path='/contrasena' element={<Contrasena/>}></Route>
           {/* <Route path='/notification-jugador*' element={<Notificaciones2 />}></Route> */}
           <Route path='/admin/deleteUser/*' element={<DeleteUser />}></Route>
         </Routes>
