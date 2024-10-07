@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { HomeIcon, TeamIcon, FolderIcon, ConfigIcon, NotificationIcon, CreateTeamIcon, ThemeIcon, HelpIcon, ExitIcon } from "../Icons"
+import { HomeIcon, TeamIcon, FolderIcon, ConfigIcon, NotificationIcon, CreateTeamIcon, ThemeIcon, HelpIcon, ExitIcon, EditMeso } from "../Icons"
 
 function NavbarTrainer() {
     const location = useLocation();
@@ -42,6 +42,12 @@ function NavbarTrainer() {
                     <li className="w-fit h-fit" >
                         <Link to={"/trainer/newTeam"} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" href="">
                             <CreateTeamIcon />
+                            {/* <span className="hidden group-hover:inline text-neutral-500">Crear Equipo</span> */}
+                        </Link>
+                    </li>
+                    <li className="w-fit h-fit" >
+                        <Link to={"/trainer/editMesocycle"} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" href="">
+                            <EditMeso />
                             {/* <span className="hidden group-hover:inline text-neutral-500">Crear Equipo</span> */}
                         </Link>
                     </li>
