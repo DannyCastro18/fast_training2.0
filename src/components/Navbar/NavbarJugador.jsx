@@ -1,7 +1,9 @@
 import { HomeIcon, FolderIcon, ConfigIcon, NotificationIcon, ThemeIcon, HelpIcon, ExitIcon } from "../Icons"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 function NavbarJugador() {
+    const location = useLocation();
+
     return (
         <aside className="w-16 mr-3 p-1.5 bg-white/50 h-[96vh] flex justify-center rounded ">
             <nav className="flex flex-col justify-between items-center w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4">
@@ -31,7 +33,8 @@ function NavbarJugador() {
 
                     {/* Notificaciones icon */}
                     <li className="w-fit h-fit" >
-                        <Link to={"/player/notifications"} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" href="">
+                        <Link to={"/player/notifications"} 
+                        state={{ background: location }} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" href="">
                             <NotificationIcon />
                             {/* <span className="hidden opacity-0 group-hover:inline transition-opacity group-hover:opacity-100 duration-300 text-neutral-500">Notificaciones</span> */}
                         </Link>

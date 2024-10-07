@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HomeIcon, TeamIcon, FolderIcon, ConfigIcon, NotificationIcon, CreateTeamIcon, ThemeIcon, HelpIcon, ExitIcon } from "../Icons"
 
-function NavbarTrainer({ onOpenModal}) {
+function NavbarTrainer() {
+    const location = useLocation();
+
     return (
         <aside className="w-16 mr-3 p-1.5 bg-white/50 h-[96vh] top-0 flex justify-center rounded ">
             <nav className="flex flex-col justify-between items-center w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4">
@@ -31,7 +33,8 @@ function NavbarTrainer({ onOpenModal}) {
                         </Link>
                     </li>
                     <li className="w-fit h-fit" >
-                        <Link to={"/trainer/notifications"} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" onClick={ onOpenModal }>
+                        <Link to={"/trainer/notifications"} 
+                        state={{ background: location }} className="flex hover:bg-neutral-300 justify-center items-center w-12 h-12 group-hover:w-full rounded gap-4" href="">
                             <NotificationIcon />
                             {/* <span className="hidden opacity-0 group-hover:inline transition-opacity group-hover:opacity-100 duration-300 text-neutral-500">Notificaciones</span> */}
                         </Link>

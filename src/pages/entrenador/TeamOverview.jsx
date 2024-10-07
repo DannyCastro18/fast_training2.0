@@ -23,9 +23,6 @@ const TeamOverview = () => {
                             <p className="mb-2 md:mb-4"><strong>Nombre</strong><br />Tin Tin Colombia</p>
                             <p className="mb-2 md:mb-4"><strong>Entrenador</strong><br />Ernesto Motosierra</p>
                             <p className="mb-2 md:mb-4"><strong>Jugadores</strong><br />13</p>
-                            <button className="bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4">
-                              Ver formación
-                            </button>
                           </div>
                         </div>
 
@@ -45,23 +42,7 @@ const TeamOverview = () => {
                           </div>
                         </div>
                         
-                        {/* Edit Icon */}
-                        <div className="absolute top-0 right-0 m-2 cursor-pointer">
-                          <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            className="h-6 w-6 text-gray-600 hover:text-gray-800" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke="currentColor" 
-                            strokeWidth={2}
-                          >
-                            <path 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round" 
-                              d="M15.232 5.232l3.536 3.536M9 13.5V17h3.5l9-9a2.828 2.828 0 00-4-4l-9 9z" 
-                            />
-                          </svg>
-                        </div>
+                        
                   </div>
                 </section>
             </div>

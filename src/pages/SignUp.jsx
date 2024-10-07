@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 import PlatformsButton from '../components/PlatformsButton';
 
 const SignUp = () => {
+    const location = useLocation();
+
     return (
             <>
                 <section className='flex items-center h-screen w-screen fixed z-10'>
@@ -26,14 +28,14 @@ const SignUp = () => {
                                     <input className="w-full mb-2 bg-zinc-200 p-2 rounded-lg" type="password" name="check-password" id="check-password" placeholder='Confirma tu Contraseña' />
                                 </div>
                                 <div>
-                                    <Link to={"/EleccionRol"}>
+                                    <Link to={"/eleccionRol"}>
                                         <PrimaryButton text="Registrarse" />
                                     </Link>
                                 </div>
                             </form>
                             <section className="flex justify-between text-sm px-4">
                                 <p>¿Ya tienes una cuenta?</p>
-                                <Link className="text-sky-500" to="/login">Iniciar Sesión</Link>
+                                <Link className="text-sky-500" to={"/eleccionRol"} state={{ background: location }}>Iniciar Sesión</Link>
                             </section>
                             
                             {/* Seccion para iniciar sesion con otras plataformas */}
