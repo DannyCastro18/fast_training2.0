@@ -26,10 +26,11 @@ import DashboardTrainer from './pages/entrenador/DashboardTrainer';
 import NotificacionesAdmin from './components/notificaciones/NotificacionesAdmin';
 import CreacionEquipo from './pages/entrenador/CreacionEquipo';
 import DocumentsTrainer from './pages/entrenador/DocumentsTrainer';
-import EditMesocycle from './pages/entrenador/EditMesocycle';
+import EdicionMesociclo from './pages/entrenador//edicion-mesociclo/edicionMesociclo';
 import TrainerHelp from './pages/entrenador/TrainerHelp';
 import ConfigurationTrainer from './pages/entrenador/configTrainer';
 import TeamOverview from './pages/entrenador/TeamOverview';
+import Tabla from './components/mesociclo/Mesociclo';
 
 // Admin imports
 // import AdminDashboard from './pages/admin/AdminDashboard';
@@ -73,7 +74,8 @@ function App() {
           <Route path='/trainer/team' element={<TeamOverview/>}></Route>
           <Route path='/trainer/documents' element={<DocumentsTrainer/>}></Route>
           <Route path='/trainer/help' element={<TrainerHelp />}></Route>
-          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route>
+          <Route path='/trainer/editMesocycle' element={<EdicionMesociclo/>}></Route>
+          <Route path='/trainer/tabla' element={<Tabla/>}></Route>
 
           {/* Rutas de admin */}
           {/* <Route path='/admin/home' element={<AdminDashboard />}></Route> */}

@@ -1,4 +1,4 @@
-import { TablaMesociclo } from '../../../components/mesociclo/Mesociclo';
+import Tabla  from '../../../components/mesociclo/Mesociclo';
 import NavbarEdicion from '../../../components/Navbar/navbar-edicion';
 import Logo from '../../../components/Logo';
 
@@ -9,7 +9,7 @@ export default function EdicionMesociclo(){
         <Logo/>
         </div>
         <NavbarEdicion/>
-        <TablaMesociclo />
+        <Tabla />
         </>
     )
 }
