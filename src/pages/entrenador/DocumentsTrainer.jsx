@@ -1,6 +1,6 @@
 import NavbarTrainer from '../../components/Navbar/NavbarTrainer';
 import HeaderApp from '../../components/HeaderApp';
-import ArchivosTrainer from '../../components/Archivos';
+import {ArchivosTrainer} from '../../components/Archivos';
 
 export default function DocumentsTrainer() {
     return (
