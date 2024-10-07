@@ -2,7 +2,7 @@
 
 const PrimaryButton = (props) => {
     return (
-        <button className={props.className + "w-full bg-sky-500 hover:bg-sky-600 text-white font-black py-2 px-4 rounded-lg "}  onClick={props.onClick}>
+        <button className={props.clases + "  bg-sky-500 hover:bg-sky-600 text-white font-black py-2 px-4 rounded-lg "}  onClick={props.onClick}>
             {props.text}
         </button>
     )

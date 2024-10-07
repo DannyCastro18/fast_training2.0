@@ -24,7 +24,7 @@ const Login = () => {
                                 </div>
                                 <div>
                                     <Link to={"/trainer/home"}>
-                                        <PrimaryButton text="Iniciar Sesión" />
+                                        <PrimaryButton clases="w-full" text="Iniciar Sesión" />
                                     </Link>
                                 </div>
                             </form>

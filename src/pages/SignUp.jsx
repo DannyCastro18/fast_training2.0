@@ -29,7 +29,7 @@ const SignUp = () => {
                                 </div>
                                 <div>
                                     <Link to={"/eleccionRol"}>
-                                        <PrimaryButton text="Registrarse" />
+                                        <PrimaryButton clases="w-full " text="Registrarse" />
                                     </Link>
                                 </div>
                             </form>

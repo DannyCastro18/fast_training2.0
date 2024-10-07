@@ -1,13 +1,13 @@
 function Navbar() {
     return (
-        <div className="flex flex-col absolute top-1/2 transform -translate-y-1/2 items-center justify-center  align-self-center  h-auto bg-white shadow-lg w-16 p-1.5 bg-white/50 rounded ml-4">
-            <nav className="flex flex-col justify-center w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4  items-center">
-                <div className="my-6">
+        <div className="flex flex-col  items-center justify-center  align-self-center  h-auto bg-white shadow-lg w-16 p-1.5 bg-white/50 rounded ">
+            <nav className="flex h-full flex-col justify-center w-full rounded bg-slate-50 group-hover:items-baseline group-hover:pl-4  items-center">
+                <div className="my-4">
                 <button className="bg-transparent border-none p-0" aria-label="Collapse">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 22L0 12L10 2l1.775 1.775L3.55 12l8.225 8.225z" ></path></svg>
                 </button>
                 </div>
-                <div className="my-6">
+                <div className="my-4">
                 <button className="bg-transparent border-none p-0" aria-label="Magic wand">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 1664 1664"><path fill="currentColor" d="m1190 581l293-293l-107-107l-293 293zm447-293q0 27-18 45L333 1619q-18 18-45 18t-45-18L45 1421q-18-18-18-45t18-45L1331 45q18-18 45-18t45 18l198 198q18 18 18 45M286 98l98 30l-98 30l-30 98l-30-98l-98-30l98-30l30-98zm350 162l196 60l-196 60l-60 196l-60-196l-196-60l196-60l60-196zm930 478l98 30l-98 30l-30 98l-30-98l-98-30l98-30l30-98zM926 98l98 30l-98 30l-30 98l-30-98l-98-30l98-30l30-98z"></path></svg>

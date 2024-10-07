@@ -10,7 +10,9 @@ function EleccionRol({ title }) {
     return (
         <div className="w-screen h-screen flex justify-center items-center">
             <section className="flex flex-col items-center justify-center w-fit h-fit py-20 rounded-xl bg-gray-200">
-                <button onClick={closeModal}>Cerrar</button>
+                <button className="" onClick={closeModal}>
+                    X
+                </button>
                 <h1 className="text-center mb-8 text-2xl font-black">Elige tu rol</h1>
                 <section className="flex justify-center mb-5">
                     <Link to="/trainer/home">
