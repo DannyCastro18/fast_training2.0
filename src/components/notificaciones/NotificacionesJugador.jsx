@@ -9,9 +9,11 @@ function PlayerNotifications({ title }) {
     
     return (
         <div className="w-full fixed inset-0 h-full flex items-center justify-center bg-gray-800/50">
-            <div className="bg-white z-10 fixed p-6 w-96 rounded shadow-md">
-            <h2>Notificaciones</h2>
-            <button onClick={closeModal}>Cerrar</button>
+            <div className="bg-white z-10 fixed p-6 w-1/3 rounded shadow-md">
+            <div className="flex justify-between my-4">
+                <h2>Notificaciones</h2>
+                <button className="text-2xl font-bold " onClick={closeModal}>x</button>
+            </div>
 
             <article className="border border-gray-300 p-2 mb-2">
                 <section className="inline-block w-5 h-5 bg-red-600 text-white rounded-full text-center leading-5 mr-2">

@@ -19,11 +19,11 @@ import DashboardJugador from './pages/jugador/DashboardJugador';
 import ConfigurationPlayer from './pages/jugador/confiplayer';
 import PlayerDocuments from './pages/jugador/PlayerDocuments';
 import PlayerHelp from './pages/jugador/PlayerHelp';
-import PlayerNotifications from './components/NotificacionesJugador';
+import PlayerNotifications from './components/notificaciones/NotificacionesJugador';
 
 // Trainer imports
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
-import NotificacionesAdmin from './components/NotificacionesAdmin';
+import NotificacionesAdmin from './components/notificaciones/NotificacionesAdmin';
 import CreacionEquipo from './pages/entrenador/CreacionEquipo';
 import DocumentsTrainer from './pages/entrenador/DocumentsTrainer';
 import EdicionMesociclo from './pages/entrenador//edicion-mesociclo/edicionMesociclo';
@@ -84,12 +84,12 @@ function App() {
           {/* <Route path='/admin/incidents' element={<AdminIncidents />}></Route>
           <Route path='/admin/incidents/info' element={<IncidentInfo />}></Route>
           <Route path='/admin/archivos' element={<AdminFiles />}></Route> */}
+        <Route path='/eleccionRol' element={<EleccionRol title="Rol2" /> } ></Route>
         </Routes>
 
         {background && (
           <Routes>
             <Route path='/rol' element={<Rol />} ></Route>
-            <Route path='/eleccionRol' element={<EleccionRol title="Rol2" /> } ></Route>
             <Route path='/player/notifications' element={<PlayerNotifications title="Notificaciones" />} ></Route>
             <Route path='/trainer/notifications' element={<NotificacionesAdmin title="Notificaciones" />} ></Route>
           </Routes>

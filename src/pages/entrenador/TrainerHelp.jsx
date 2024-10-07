@@ -36,30 +36,6 @@ function TrainerHelp() {
                 <li>¿Cómo puedo desactivar la habitación Wi-Fi?</li>
                 <li>¿Cómo puedo desactivar el modo de entrenamiento?</li>
                 <li>¿Cómo puedo desactivar los colores de la habitación?</li>
-                <style >{`
-                h2{
-              color: red;
-              text-decoration: none;
-              font-size:22px;
-                
-                }
-                  main {
-                    padding: 20px;
-                    text-align:left;
-                    margin:20px;
-                  }
-                  main h2 {
-                    margin-top: 0;
-                  }
-                  main ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                  }
-                  main li {
-                    padding: 10px;
-                  }
-                `}</style>
               </ul>
             </section>
         </div>

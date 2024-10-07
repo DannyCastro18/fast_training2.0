@@ -1,5 +1,6 @@
 import Tabla  from '../../../components/mesociclo/Mesociclo';
 import NavbarEdicion from '../../../components/Navbar/NavbarEdicion';
+import HeaderApp from '../../../components/HeaderApp';
 import Logo from '../../../components/Logo';
 import NavbarTrainer from '../../../components/Navbar/NavbarTrainer';
 

@@ -128,7 +128,7 @@ const fileSystem = [
         { name: 'Archivo5.txt', type: 'file' },
       ],
     },
-  ];
+];
   
   // Componente que renderiza cada archivo o carpeta
   const FileNode = ({ node }) => {
@@ -173,4 +173,15 @@ const ArchivosTrainer = () => {
   );
 };
 
-export default ArchivosTrainer;
+const ArchivosJugador = () => {
+  return (
+      <div className='flex flex-col gap-2 overflow-y-scroll h-full w-1/4 p-4'>
+        <h3 className='text-xl font-font'>Archivos de tu equipo</h3>
+        {fileSystem.map((node, index) => (
+          <FileNode key={index} node={node} />
+        ))}
+      </div>
+  );
+};
+
+export {ArchivosJugador, ArchivosTrainer } ;
