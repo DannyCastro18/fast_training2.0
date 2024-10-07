@@ -1,7 +1,17 @@
-function Notificaciones2() {
+import { useNavigate } from "react-router-dom";
+
+function PlayerNotifications({ title }) {
+    const navigate = useNavigate()
+
+    const closeModal = () => {
+        navigate(-1)
+    }
+    
     return (
-        <>
+        <div className="w-full fixed inset-0 h-full flex items-center justify-center bg-gray-800/50">
+            <div className="bg-white z-10 fixed p-6 w-96 rounded shadow-md">
             <h2>Notificaciones</h2>
+            <button onClick={closeModal}>Cerrar</button>
 
             <article className="border border-gray-300 p-2 mb-2">
                 <section className="inline-block w-5 h-5 bg-red-600 text-white rounded-full text-center leading-5 mr-2">
@@ -46,8 +56,9 @@ function Notificaciones2() {
                 </section>
                 <h3 className="float-right text-xs text-gray-500">03/02/2024</h3>
             </article>
-        </>
+            </div>
+        </div>
     )
 }
 
-export default Notificaciones2;
+export default PlayerNotifications;
