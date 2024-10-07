@@ -36,7 +36,7 @@ import Tabla from './components/mesociclo/Mesociclo';
 // import AdminDashboard from './pages/admin/AdminDashboard';
 import ConfiguracionAdmin from './pages/admin/configuracion/configuracionAdmin';
 import Restriccion from './pages/admin/acceso-restringido/restriccion';
-import NavbarEdicion from './components/Navbar/navbar-edicion';
+import NavbarEdicion from './components/Navbar/NavbarEdicion';
 
 
 function App() {
