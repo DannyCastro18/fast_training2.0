@@ -1,7 +1,7 @@
 function TablaMesociclo(){
     return(
-    <section className="py-12 pl-24 m-20 flex justify-center items-center rounded-lg bg-orange-100 w-9/12">
-        <article className="bg-white h-full w-min rounded-2xl text-center">
+    <section className="py-12 pl-24 flex justify-center items-center rounded-lg bg-slate-50/65 w-9/12">
+        <article className="bg-white h-full  w-min text-center">
             <table className="border-collapse border border-slate-500 w-full rounded-2xl  ">
                 <thead className="border-collapse border border-slate-500">
                     <tr>
@@ -76,4 +76,4 @@ function Tabla(){
     )
 }
 
-export {TablaMesociclo, Tabla}
+export default Tabla;
