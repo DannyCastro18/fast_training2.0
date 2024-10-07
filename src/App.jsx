@@ -17,7 +17,7 @@ import DeleteUser from './pages/admin/deleteUser';
 import DashboardJugador from './pages/jugador/DashboardJugador';
 import ConfigurationPlayer from './pages/jugador/confiplayer';
 import PlayerDocuments from './pages/jugador/PlayerDocuments';
-import PlayerHelp from './pages/jugador/PlauerHelp';
+import PlayerHelp from './pages/jugador/PlayerHelp';
 
 // Trainer imports
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
