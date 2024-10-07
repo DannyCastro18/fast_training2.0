@@ -1,6 +1,6 @@
 function TablaMesociclo(){
     return(
-    <section className="py-12 m-20 flex justify-center items-center rounded-lg bg-orange-100 w-9/12">
+    <section className="py-12 pl-24 m-20 flex justify-center items-center rounded-lg bg-orange-100 w-9/12">
         <article className="bg-white h-full w-min rounded-2xl text-center">
             <table className="border-collapse border border-slate-500 w-full rounded-2xl  ">
                 <thead className="border-collapse border border-slate-500">

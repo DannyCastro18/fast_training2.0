@@ -16,8 +16,8 @@ import DeleteUser from './pages/admin/deleteUser';
 // Player imports
 import DashboardJugador from './pages/jugador/DashboardJugador';
 import ConfigurationPlayer from './pages/jugador/confiplayer';
-import PlayerDocuments from './pages/jugador/PlayerDocuments';
-import PlayerHelp from './pages/jugador/PlauerHelp';
+// import PlayerDocuments from './pages/jugador/PlayerDocuments';
+// import PlayerHelp from './pages/jugador/PlauerHelp';
 
 // Trainer imports
 import DashboardTrainer from './pages/entrenador/DashboardTrainer';
@@ -36,7 +36,7 @@ import NavbarAdmin from './components/Navbar/NavbarAdmin';
 import Logo from './components/Logo';
 import Restriccion from './pages/admin/acceso-restringido/restriccion';
 import NavbarEdicion from './components/Navbar/navbar-edicion';
-import { TablaMesociclo } from './components/mesociclo/Mesociclo';
+// import TablaMesociclo  from './components/mesociclo/Mesociclo';
 import EdicionMesociclo from './pages/entrenador/edicion-mesociclo/edicionMesociclo';
 
 
@@ -58,8 +58,8 @@ function App() {
           {/* Rutas Jugador */}
           <Route path='/player/home' element={<DashboardJugador />}></Route>
           <Route path='/player/config' element={<ConfigurationPlayer/>}></Route>
-          <Route path='/player/help' element={<PlayerHelp />}></Route>
-          <Route path='/player/documents' element={<PlayerDocuments/>}></Route>
+          {/* <Route path='/player/help' element={<PlayerHelp />}></Route> */}
+          {/* <Route path='/player/documents' element={<PlayerDocuments/>}></Route> */}
 
 
           {/* Rutas Entrenador */}
@@ -72,7 +72,8 @@ function App() {
           <Route path='/trainer/team' element={<TeamOverview/>}></Route>
           <Route path='/trainer/documents' element={<DocumentsTrainer/>}></Route>
           <Route path='/trainer/help' element={<TrainerHelp />}></Route>
-          <Route path='/trainer/editMesocycle' element={<EditMesocycle/>}></Route>
+          <Route path='/trainer/editMesocycle' element={<EdicionMesociclo/>}></Route>
+          {/* <Route path='/trainer/tablamesociclo' element={<TablaMesociclo/>}></Route> */}
 
           {/* Rutas de admin */}
           {/* <Route path='/admin/home' element={<AdminDashboard />}></Route> */}
